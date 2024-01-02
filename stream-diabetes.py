@@ -32,8 +32,8 @@ diab_diagnosis = ''
 
 # Membuat tombol untuk prediksi
 if st.button('Test Prediksi Diabetes'):
-    diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI,
-                                               DiabetesPedigreeFunction, Age]])
+    diab_prediction = diabetes_model.predict([[Pregnancies, Gula, TekananDarah, KetebalanKulit, Insulin, BMI,
+                                               DiabetesPedigreeFunction, Umur]])
 
     if (diab_prediction[0] == '1'):
         diab_diagnosis = 'Pasien terkena Diabetes'
