@@ -37,7 +37,7 @@ if st.button('Test Prediksi Diabetes'):
 
     if (diab_prediction[0] == 1):
         diab_diagnosis = 'Pasien terkena Diabetes'
-    else:
+    else :
         diab_diagnosis = 'Pasien tidak terkena Diabetes'
 
 # Memastikan st.success(diab_diagnosis) berada di luar blok if
